@@ -1,6 +1,6 @@
 /*
  *  image-converter.c
- * 
+ *
  *  Copyright (C) 2004-2005 Jürg Billeter
  *
  *  This library is free software; you can redistribute it and/or
@@ -18,11 +18,11 @@
  *  Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  *
  *  Author: Jürg Billeter <j@bitron.ch>
- * 
+ *
  */
 
 #ifdef HAVE_CONFIG_H
- #include <config.h>
+#include <config.h>
 #endif
 
 #include "nautilus-image-converter.h"
@@ -31,34 +31,29 @@
 
 static GType type_list[1];
 
-void nautilus_module_initialize (GTypeModule  *module);
-void nautilus_module_shutdown   (void);
-void nautilus_module_list_types (const GType **types,
-				 int          *num_types);
+void nautilus_module_initialize(GTypeModule *module);
+void nautilus_module_shutdown(void);
+void nautilus_module_list_types(const GType **types,
+								int *num_types);
 
-
-void
-nautilus_module_initialize (GTypeModule *module)
+void nautilus_module_initialize(GTypeModule *module)
 {
-	g_print ("Initializing nautilus-image-converter extension\n");
+	g_print("Initializing nautilus-image-converter extension\n");
 
-	nautilus_image_converter_register_type (module);
+	nautilus_image_converter_register_type(module);
 	type_list[0] = NAUTILUS_TYPE_IMAGE_CONVERTER;
 
-	bindtextdomain (GETTEXT_PACKAGE, GNOMELOCALEDIR);
-	bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
+	bindtextdomain(GETTEXT_PACKAGE, GNOMELOCALEDIR);
+	bind_textdomain_codeset(GETTEXT_PACKAGE, "UTF-8");
 }
 
-void
-nautilus_module_shutdown (void)
+void nautilus_module_shutdown(void)
 {
-	g_print ("Shutting down nautilus-image-converter extension\n");
+	g_print("Shutting down nautilus-image-converter extension\n");
 }
 
-void 
-nautilus_module_list_types (const GType **types,
-			    int          *num_types)
+void nautilus_module_list_types(const GType **types, int *num_types)
 {
 	*types = type_list;
-	*num_types = G_N_ELEMENTS (type_list);
+	*num_types = G_N_ELEMENTS(type_list);
 }
