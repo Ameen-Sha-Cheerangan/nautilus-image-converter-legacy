@@ -48,6 +48,8 @@ PATH: /usr/local/games
 PATH: /snap/bin
 PATH: /snap/bin
 PATH: /home/ameen/.lmstudio/bin
+PATH: /home/ameen/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/scripts/noConfigScripts
+PATH: /home/ameen/.config/Code/User/globalStorage/github.copilot-chat/debugCommand
 PATH: /home/ameen/Android/Sdk/tools
 PATH: /home/ameen/Android/Sdk/platform-tools
 PATH: /home/ameen/.lmstudio/bin
@@ -505,6 +507,7 @@ config.status:1178: creating data/Makefile
 config.status:1178: creating src/Makefile
 config.status:1178: creating po/Makefile.in
 config.status:1178: creating config.h
+config.status:1359: config.h is unchanged
 config.status:1407: executing depfiles commands
 config.status:1407: executing libtool commands
 config.status:1407: executing default-1 commands
