@@ -1,0 +1,17 @@
+# Build artifacts
+*.o
+*.lo
+*.la
+*.so
+.libs/
+config.log
+config.status
+autom4te.cache/
+
+# Editor backups
+*~
+*#
+
+# Personal scripts
+mergeallfiles.py
+project_source.txt
