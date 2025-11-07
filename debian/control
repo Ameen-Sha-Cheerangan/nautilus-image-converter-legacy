@@ -1,0 +1,29 @@
+Source: nautilus-image-converter
+Section: gnome
+Priority: optional
+Maintainer: Debian QA Group <packages@qa.debian.org>
+Homepage: http://git.gnome.org/browse/nautilus-image-converter/
+Vcs-Svn: svn://svn.debian.org/svn/collab-maint/deb-maint/nautilus-image-converter/trunk/
+Vcs-Browser: http://svn.debian.org/wsvn/collab-maint/deb-maint/nautilus-image-converter/trunk/
+Build-Depends: 	debhelper (>= 7.0.50~), 
+		autotools-dev, 
+                intltool,
+		libxml-parser-perl, 
+		pkg-config, 
+		libnautilus-extension-dev (>= 3.0.0),
+ 		libgtk-3-dev (>= 3.0.0), 
+		libglib2.0-dev (>= 2.28.0)
+Standards-Version: 3.9.2
+
+Package: nautilus-image-converter
+Architecture: any
+Depends: ${shlibs:Depends},
+	${misc:Depends},
+	imagemagick
+Recommends: nautilus (>= 3.0.0)
+Description: nautilus extension to mass resize or rotate images
+ This package adds a "Resize Images..." menu item to
+ the context menu of all images. This opens a dialog
+ where you set the desired image size and file name.
+ A click on "Resize" finally resizes the image(s)
+ using ImageMagick's convert tool.

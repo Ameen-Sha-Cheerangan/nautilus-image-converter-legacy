@@ -1,0 +1,13 @@
+Nautilus-Image-Converter
+========================
+
+The Nautilus-Image-Converter extension allows you to resize/rotate images from Nautilus.
+
+Hacking:
+========
+
+n-i-c can be check out with the following command:
+
+git clone git://git.gnome.org/nautilus-image-converter
+
+Patches welcomed!

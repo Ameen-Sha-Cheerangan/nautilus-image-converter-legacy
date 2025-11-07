@@ -1,0 +1,243 @@
+Index: nautilus-image-converter/po/es.po
+===================================================================
+--- nautilus-image-converter.orig/po/es.po	2010-04-18 22:51:10.000000000 +0200
++++ nautilus-image-converter/po/es.po	2010-04-18 22:51:19.000000000 +0200
+@@ -1,71 +1,75 @@
+-# Spanish translation of PACKAGE.
+-# Copyright (C) 2005 THE PACKAGE'S COPYRIGHT HOLDER
+-# This file is distributed under the same license as the PACKAGE package.
+-# Stephen Denham <stephen.denham@gmail.com>, 2007.
+-# , fuzzy
+-# 
++# Spanish translation of nautilus-image-converter.
++# Copyright (C) 2009 THE nautilus-image-converter'S COPYRIGHT HOLDER
++# This file is distributed under the same license as the nautilus-image-converter package.
+ # 
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: PACKAGE VERSION\n"
++"Project-Id-Version: nautilus-image-converter 0.0.9\n"
+ "Report-Msgid-Bugs-To: \n"
+-"POT-Creation-Date: 2007-09-18 00:16+0200\n"
+-"PO-Revision-Date: 2007-09-18 00:42+0200\n"
+-"Last-Translator:Stephen Denham <stephen.denham@gmail.com>\n"
+-"Language-Team: Italian <it@li.org>\n"
++"POT-Creation-Date: 2006-12-15 22:19+0900\n"
++"PO-Revision-Date: 2009-11-27 13:44-0300\n"
++"Last-Translator: Federico Vera <dktcoding@gmail.com>\n"
++"Language-Team: \n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+ "Content-Transfer-Encoding: 8bit"
+ 
+-#: ../src/nautilus-image-converter.c:109
++#: ../src/nautilus-image-converter.c:118
+ msgid "_Resize Images..."
+-msgstr "_Redimensionar imagenes..."
++msgstr "_Redimensionar imágenes..."
+ 
+-#: ../src/nautilus-image-converter.c:110
++#: ../src/nautilus-image-converter.c:119
+ msgid "Resize each selected image"
+-msgstr "Redimensionar cada imagen seleccionado"
++msgstr "Redimensionar cada imagen seleccionada"
++
++#: ../src/nautilus-image-converter.c:128
++msgid "Ro_tate Images..."
++msgstr "Ro_tar Imágenes..."
+ 
+-#: ../src/nautilus-image-resizer.c:219
++#: ../src/nautilus-image-converter.c:129
++msgid "Rotate each selected image"
++msgstr "Rotar cada imagen seleccionada"
++
++#: ../src/nautilus-image-resizer.c:224 ../src/nautilus-image-rotator.c:221
+ msgid "_Skip"
+-msgstr "_Saltar"
++msgstr "_Saltear"
+ 
+-#: ../src/nautilus-image-resizer.c:221
++#: ../src/nautilus-image-resizer.c:226 ../src/nautilus-image-rotator.c:223
+ msgid "_Retry"
+ msgstr "_Reintentar"
+ 
+-#: ../src/nautilus-image-resizer.c:340
++#: ../src/nautilus-image-resizer.c:343
+ #, c-format
+ msgid "Resizing image: %d of %d"
+-msgstr "Redimensionando imagen: %d di %d"
++msgstr "Redimensionando imagen: %d de %d"
+ 
+-#: ../src/nautilus-image-resizer.c:345
++#: ../src/nautilus-image-resizer.c:348
+ #, c-format
+ msgid "<i>Resizing \"%s\"</i>"
+-msgstr "<i>Redimensionando \"%s\"</i>"
++msgstr "<i>Redimensionando\"%s\"</i>"
+ 
+-#: ../src/nautilus-image-resizer.c:363
++#: ../src/nautilus-image-resizer.c:366 ../src/nautilus-image-rotator.c:363
+ msgid "Please enter a valid filename suffix!"
+-msgstr "Introduzca un sufijo valido"
++msgstr "Por favor ingrese un sufijo de archivo válido!"
+ 
+ #: ../src/nautilus-image-resize.glade.h:1
+ msgid ".resized"
+ msgstr ".redimensionado"
+ 
+ #: ../src/nautilus-image-resize.glade.h:2
+-msgid "<b>Filename</b>"
+-msgstr "<b>Nombre de fichero</b>"
+-
++#: ../src/nautilus-image-rotate.glade.h:5
+ #: ../src/nautilus-image-resize.glade.h:3
+-msgid "<b>Image Size</b>"
+-msgstr "<b>Tamaño de imagen</b>"
++msgid "<b>Filename</b><b>Image Size</b>"
++msgstr "<b>Nombre de archivo</b><b>Tamaño de Imagen</b>"
+ 
+ #: ../src/nautilus-image-resize.glade.h:4
++#: ../src/nautilus-image-rotate.glade.h:7
+ msgid "Append"
+-msgstr "Adjuntar"
++msgstr "Anexar"
+ 
+ #: ../src/nautilus-image-resize.glade.h:5
+ msgid "Custom size:"
+-msgstr "Tamaño personalizado:"
++msgstr "Tamaño personalizado:"
+ 
+ #: ../src/nautilus-image-resize.glade.h:6
+ msgid "Height:"
+@@ -73,63 +77,99 @@
+ 
+ #: ../src/nautilus-image-resize.glade.h:7
+ msgid "Resize Images"
+-msgstr "Redimensionar imagenes"
++msgstr "Redimensionar Imágenes"
+ 
+ #: ../src/nautilus-image-resize.glade.h:8
+ msgid "Resize in place"
+-msgstr "No cambiar el nombre"
++msgstr "Redimensionar en el lugar"
+ 
+ #: ../src/nautilus-image-resize.glade.h:9
+-msgid "Select a size:"
+-msgstr "Seleccionar un tamaño:"
++msgid "Scale:"
++msgstr "Escala:"
+ 
+ #: ../src/nautilus-image-resize.glade.h:10
+-msgid "Width:"
+-msgstr "Anchura:"
++msgid "Select a size:"
++msgstr "Seleccione un tamaño:"
+ 
+ #: ../src/nautilus-image-resize.glade.h:11
+-msgid "pixels"
+-msgstr "pixels"
++msgid "Width:"
++msgstr "Ancho:"
+ 
+ #: ../src/nautilus-image-resize.glade.h:12
+-msgid "to file title"
+-msgstr "al nombre de fichero"
+-
+-msgid "Scale:"
+-msgstr "Graduar:"
+-
+ msgid "_Resize"
+ msgstr "_Redimensionar"
+ 
++#: ../src/nautilus-image-resize.glade.h:13
+ msgid "percent"
+-msgstr "por cien"
++msgstr "por ciento"
+ 
+-msgid "Ro_tate Images..."
+-msgstr "Ro_tar imagenes..."
++#: ../src/nautilus-image-resize.glade.h:14
++msgid "pixels"
++msgstr "pixeles"
+ 
+-msgid "Rotate Images"
+-msgstr "Rotar imagenes"
++#: ../src/nautilus-image-resize.glade.h:15
++#: ../src/nautilus-image-rotate.glade.h:14
++msgid "to file title"
++msgstr "al nombre de archivo"
+ 
+-msgid "Select an angle:"
+-msgstr "Seleccionar un angulo:"
++#: ../src/nautilus-image-rotator.c:340
++#, c-format
++msgid "Rotating image: %d of %d"
++msgstr "Rotando imagen: %d de %d"
+ 
+-msgid "Custom angle:"
+-msgstr "Tamaño angulo:"
++#: ../src/nautilus-image-rotator.c:345
++#, c-format
++msgid "<i>Rotating \"%s\"</i>"
++msgstr "<i>Rotando \"%s\"</i>"
+ 
+-msgid "degrees clockwise"
+-msgstr "gradas a la derecha"
++#: ../src/nautilus-image-rotate.glade.h:1
++msgid ".rotated"
++msgstr ".rotada"
++
++#: ../src/nautilus-image-rotate.glade.h:2
++msgid ""
++"90Â° clockwise\n"
++"90Â° counter-clockwise\n"
++"180Â°"
++msgstr ""
++"90Â° sentido horario\n"
++"90Â° sentido anti-horario\n"
++"180Â°"
++
++#: ../src/nautilus-image-rotate.glade.h:6
++msgid "<b>Image Rotation</b>"
++msgstr "<b>Rotación de Imagen</b>"
++
++#: ../src/nautilus-image-rotate.glade.h:8
++msgid "Custom angle:"
++msgstr "Ángulo personalizado:"
+ 
+-msgid "clockwise"
+-msgstr "a la derecha"
++#: ../src/nautilus-image-rotate.glade.h:9
++msgid "Rotate Images"
++msgstr "Rotar Imágenes"
+ 
++#: ../src/nautilus-image-rotate.glade.h:10
+ msgid "Rotate in place"
+-msgstr "No cambiar el nombre"
++msgstr "Rotar en el lugar"
+ 
+-msgid "<b>Image Rotation</b>"
+-msgstr "<b>Rotación de imagen</b>"
++#: ../src/nautilus-image-rotate.glade.h:11
++msgid "Select an angle:"
++msgstr "Seleccionar un ángulo:"
+ 
++#: ../src/nautilus-image-rotate.glade.h:12
+ msgid "_Rotate"
+ msgstr "_Rotar"
+ 
+-msgid ".rotated"
+-msgstr ".rotado"
++#: ../src/nautilus-image-rotate.glade.h:13
++msgid "degrees clockwise"
++msgstr "grados en sentido horario"
++
++#: ../src/nautilus-image-resize.glade.h:2                                                                                                                    
++#: ../src/nautilus-image-rotate.glade.h:5                                                                                                                    
++msgid "<b>Filename</b>"
++msgstr "<b>Nombre de archivo</b>"
++
++#: ../src/nautilus-image-resize.glade.h:3                                                                                                                    
++msgid "<b>Image Size</b>"
++msgstr "<b>Tamaño de Imagen</b>"
++

@@ -1,0 +1,141 @@
+nautilus-image-converter (0.3.1~git20110416-2) unstable; urgency=medium
+
+  * QA upload.
+  * Set maintainer to Debian QA Group. (see #852386)
+  * Use autotools_dev to fix arm64 build. (Closes: #727469)
+  * Cherry-pick upstream fix to have the rotate dialog show up again.
+  * Apply encoding fixes for the Spanish translation from Carlos C Soto.
+    (Closes: #648118)
+
+ -- Adrian Bunk <bunk@debian.org>  Tue, 24 Jan 2017 11:48:21 +0200
+
+nautilus-image-converter (0.3.1~git20110416-1) unstable; urgency=low
+
+  * ACK NMU, thanks Luk Claes.
+  * New upstream snasphot
+   - Translation update (Closes: #558336)
+   - Migrate to gtk3 (LP: #832792, #842142 Closes: #637313)
+  * debian/patches:
+   - 00-fix_ltmain.sh.patch: Refresh.
+   - 01-fix_gcc_options.patch: Remove, merged upstream.
+   - 02-bulgarian_translation.patch: Remove, merged upstream.
+   - 03-catalan_translation.patch: Remove, merged upstream.
+   - 04-german_translation.patch: Remove, merged upstream.
+   - 05-danish-translation.patch: Danish translation by AJenbo (LP: #563167)
+   - 06-galician-translation.patch: Galician translation by Daniel Espinheira
+   - 07-romanian-translation.patch: Romanian translation by Peter Severin
+   - 08-fix-spanish-translation.patch: Fix Spanish translation by Federico Vera
+     LP: #489337
+   - 09-hungarian-translation.patch: Add Hungarian translation. (LP: #575397)
+  * debian/control:
+   - Add ${misc:Depends} to depends.
+   - Bump Standards-Version to 3.9.2 (no change needed)
+   - Update location of upstream code.
+   - Bump build-depends on libnautilus-extension-dev (>= 3.0.0) and
+     libglib2.0-dev (>= 2.28.0).
+   - Drop build-depends on libglade2-dev.
+   - Build-depends on libgtk-3-dev.
+   - Build-depends on intltool.
+   - Add a recommends on nautilus (>= 3.0.0) rather than depending on it.
+  * Switch to dpkg-source 3.0 (quilt) format
+   - debian/rules: Remove include for quilt.
+   - debian/control: Remove build-depends on quilt.
+  * Switch to dh7
+   - debian/control: Build-depends on debhelper >= 7.0.50~ for override support
+   - debian/rules: 
+    + use tiny dh file.
+    + Don't run dh_makeshlibs, the .so is not a library.
+    + Remove .la files.
+   - debian/compat: Bump to 7.
+  * debian/README.source:
+   - Remove.
+  * debian/README.Debian:
+   - Add the description of how the original tarball is produced.
+
+ -- Julien Lavergne <julien.lavergne@gmail.com>  Sun, 16 Oct 2011 13:37:18 +0200
+
+nautilus-image-converter (0.3.0-3.1) unstable; urgency=low
+ 
+  * Non-maintainer upload.
+  * Don't ship .la files (Closes: #622530).
+ 
+ -- Luk Claes <luk@debian.org>  Sun, 26 Jun 2011 09:48:57 +0200
+
+nautilus-image-converter (0.3.0-3) unstable; urgency=medium
+
+  * Upload to unstable (Closes: #529936, #474776, #475237).
+  * debian/control: 
+   - Wrap build-depends and depends.
+   - Bump Standards-Version to 3.8.1.
+
+ -- Julien Lavergne <julien.lavergne@gmail.com>  Mon, 13 Apr 2009 22:28:08 +0200
+
+nautilus-image-converter (0.3.0-2) experimental; urgency=low
+
+  * New maintainer (Closes: #513936). Thanks David Paleino for his work.
+  * debian/control: 
+   - Bump Standards-Version to 3.8.0
+  * debian/README.source : 
+   - Added for Standards-Version 3.8.0
+  * debian/rules: 
+   - Added -Wl,--as-needed LDFLAGS.
+  * debian/patches : 
+   - Added descriptions for each patch.
+   - 02-bulgarian_translation.patch : Added Bulgarian translation.
+   - 03-catalan_translation.patch: Added Catalan translation.
+   - 04-german_translation.patch : Added German translation.
+
+ -- Julien Lavergne <julien.lavergne@gmail.com>  Tue, 03 Feb 2009 20:13:42 +0100
+
+nautilus-image-converter (0.3.0-1) experimental; urgency=low
+
+  * New upstream release:
+    - supports new extension ABI in nautilus >= 2.21 (Closes: #475237, #474776)
+  * debian/watch updated to grab source tarballs from download.gnome.org
+  * debian/control dependencies updated
+  * debian/patches/:
+    - 01-fix_fr.po.patch removed
+    - 00-fix_ltmain.sh.patch added
+    - 01-fix_gcc_options.patch added
+  * debian/copyright:
+    - now in a machine-readable format.
+    - copyright information updated.
+
+ -- David Paleino <d.paleino@gmail.com>  Sat, 19 Apr 2008 08:46:20 +0200
+
+nautilus-image-converter (0.2.1-2) unstable; urgency=low
+
+  * debian/rules, debian/control updated to support quilt
+  * debian/patches/* added:
+    - fix French translation, thanks to Julien Valroff (Closes: #458046)
+
+ -- David Paleino <d.paleino@gmail.com>  Fri, 28 Dec 2007 10:31:14 +0100
+
+nautilus-image-converter (0.2.1-1) unstable; urgency=low
+
+  * New upstream release
+  * debian/control:
+    - Standards-Version updated to 3.7.3
+    - added Vcs-Svn and Vcs-Browser fields
+
+ -- David Paleino <d.paleino@gmail.com>  Sun, 23 Dec 2007 19:34:25 +0100
+
+nautilus-image-converter (0.2.0-1) unstable; urgency=low
+
+  * New upstream release
+  * debian/rules cleaned up a bit
+  * debian/control:
+    - added new Homepage field (instead of the old pseudo-field in the
+      long description)
+    - Build-Depends field wrapped
+    - ${misc:Depends} variable removed
+    - added versions to dependencies
+
+ -- David Paleino <d.paleino@gmail.com>  Mon, 01 Oct 2007 10:07:12 +0200
+
+nautilus-image-converter (0.0.9-1) unstable; urgency=low
+
+  * Initial release (Closes: #374061)
+
+ -- David Paleino <d.paleino@gmail.com>  Mon, 30 Apr 2007 23:08:14 +0200
+
