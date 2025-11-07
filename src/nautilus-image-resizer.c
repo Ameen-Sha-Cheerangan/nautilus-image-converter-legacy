@@ -603,6 +603,12 @@ nautilus_image_resizer_init(NautilusImageResizer *resizer)
 		gtk_widget_set_tooltip_text(GTK_WIDGET(priv->target_size_radiobutton),
 									_("For JPEGs, 'jpegoptim' is not found. Falling back to 'convert' (slower)."));
 	}
+	else
+	{
+		/* 5. THIS IS THE NEW BLOCK: Set the default tooltip */
+		gtk_widget_set_tooltip_text(GTK_WIDGET(priv->target_size_radiobutton),
+									_("Sets an approximate target size. The final size may vary and won't reduce further than the image's maximum compression."));
+	}
 	/* --- END OF UPDATED CODE ---
 	 *
 	 */
