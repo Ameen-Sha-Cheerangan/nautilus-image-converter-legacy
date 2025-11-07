@@ -1,0 +1,5 @@
+	../data/nautilus-image-resize.ui \
+	../data/nautilus-image-rotate.ui \
+	../src/nautilus-image-converter.c \
+	../src/nautilus-image-resizer.c \
+	../src/nautilus-image-rotator.c
