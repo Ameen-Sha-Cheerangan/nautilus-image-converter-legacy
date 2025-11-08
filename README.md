@@ -45,7 +45,7 @@ sudo apt install libnautilus-extension-dev libgtk-3-dev imagemagick jpegoptim
 
 ```bash
 # 1. Clone this repository
-git clone [https://github.com/Ameen-Sha-Cheerangan/nautilus-image-converter-legacy.git](https://github.com/Ameen-Sha-Cheerangan/nautilus-image-converter-legacy.git)
+git clone https://github.com/Ameen-Sha-Cheerangan/nautilus-image-converter-legacy.git
 
 # 2. Enter the new directory
 cd nautilus-image-converter-legacy
@@ -68,7 +68,15 @@ You **must** restart Nautilus for the extension to load.
 nautilus -q
 ```
 
-Now you can right-click on any JPG or PNG image to see the new options.
+### 4\. Uninstall
+
+You **must** navigate to the directory nautilus-image-converter legacy
+
+```bash
+sudo make uninstall
+```
+
+Now you are free to remove the directory.
 
 -----
 
