@@ -11,7 +11,7 @@ This fork adds a **"Target file size"** option to the "Resize Images" dialog.
 
 This allows you to compress **JPG** and **PNG** images to an approximate target size (e.g., 50 KB), which is perfect for preparing images for web uploads, email, or filling out application forms.
 
-![Resize Images Dialog with new 'Target file size' option](image_cad405.png)
+
 
 ---
 
@@ -24,6 +24,7 @@ All the original features of the `nautilus-image-converter` are fully intact:
 * **Rotate Images:** Rotate 90°, 180°, or by a custom angle.
 * **In-Place or New File:** Choose to overwrite your original images or create new copies (e.g., `image.resized.jpg`).
 
+![Resize Images Dialog with new 'Target file size' option](image_cad405.png)
 ![Rotate Images Dialog](image_cad3e8.png)
 
 ---
