@@ -91,6 +91,16 @@ This original project was created by Jürg Billeter and later maintained as part
 
 `http://git.gnome.org/browse/nautilus-image-converter/` (which returns 404 by the way)
 
+
+## Issues
+
+If you find any issues or have suggestions, please [open an issue](https://github.com/Ameen-Sha-Cheerangan/nautilus-image-converter-legacy/issues).
+
+If you found this tool helpful, please consider giving it a ⭐ on [GitHub](https://github.com/Ameen-Sha-Cheerangan/nautilus-image-converter-legacy)!
+
+---
+
+
 Patches welcomed\!
 
 
