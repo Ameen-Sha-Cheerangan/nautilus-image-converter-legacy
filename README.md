@@ -32,18 +32,7 @@ You will need the build tools, `imagemagick`, and `jpegoptim`.
 **On Ubuntu / Pop!_OS / Debian-based systems:**
 ```bash
 sudo apt install libnautilus-extension-dev libgtk-3-dev imagemagick jpegoptim
-
-
-
-That looks great\! You've already got the text perfect. Now, let's add those screenshots to make it look professional.
-
-Here is the complete, updated `README.md` code. Just copy the entire text from the box below and paste it into your `README.md` file on GitHub.
-
-*(I've added the screenshots, adjusted the headers slightly for clarity, and included the `nautilus -q` restart command, which is a crucial step for users.)*
-
------
-
-````markdown
+```
 # Nautilus-Image-Converter-Legacy
 
 An extension for the GNOME Nautilus file manager to quickly resize and rotate images from the right-click context menu.
