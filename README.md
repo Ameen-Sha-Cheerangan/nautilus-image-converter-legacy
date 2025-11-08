@@ -74,9 +74,11 @@ Now you can right-click on any JPG or PNG image to see the new options.
 
 ## Original Project
 
-This repository is a fork of the original `nautilus-image-converter` from GNOME. The new "Target file size" feature was added by [Ameen Sha Cheerangan](https://github.com/Ameen-Sha-Cheerangan).
+This repository is a fork of the original `nautilus-image-converter`, an open-source utility for GNOME. The new "Target file size" feature was added by [Ameen Sha Cheerangan](https://github.com/Ameen-Sha-Cheerangan).
 
-The original project can be checked out with the following command:
+The base code for this fork was sourced directly from the version (by using `apt source nautilus-image-converter`) provided by the official Ubuntu `apt` repositories (0.3.1~git20110416-2), which served as a stable, legacy foundation.
+
+This original project was created by Jürg Billeter and later maintained as part of the official GNOME project. The legacy source repository for that project is believed to be:
 
 `git clone git://git.gnome.org/nautilus-image-converter`
 
