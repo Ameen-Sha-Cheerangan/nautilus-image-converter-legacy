@@ -70,7 +70,7 @@ nautilus -q
 
 ### 4\. Uninstall
 
-You **must** navigate to the directory nautilus-image-converter legacy
+You **must** navigate to the directory `nautilus-image-converter-legacy` legacy
 
 ```bash
 sudo make uninstall
