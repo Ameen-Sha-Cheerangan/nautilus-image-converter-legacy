@@ -3,7 +3,7 @@
 
 An extension for the GNOME Nautilus file manager to quickly resize and rotate images from the right-click context menu.
 
-This repository is a fork of the original `nautilus-image-converter` from GNOME, updated with a powerful new feature.
+This repository is a fork of the original `nautilus-image-converter` from GNOME, updated with a new feature.
 
 ## ✨ New Feature: Target File Size
 
