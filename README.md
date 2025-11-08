@@ -67,6 +67,7 @@ You **must** restart Nautilus for the extension to load.
 ```bash
 nautilus -q
 ```
+Now you can right-click on any JPG or PNG image(can be done while selecting multiple images are also selected) to see the new options.
 
 ### 4\. Uninstall
 
