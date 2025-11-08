@@ -38,6 +38,7 @@ You will need the build tools, `imagemagick`, and `jpegoptim` (for the new featu
 
 **On Ubuntu / Pop!_OS / Debian-based systems:**
 ```bash
+sudo apt-get update
 sudo apt install libnautilus-extension-dev libgtk-3-dev imagemagick jpegoptim
 ```
 
