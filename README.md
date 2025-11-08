@@ -80,7 +80,7 @@ The base code for this fork was sourced directly from the version (by using `apt
 
 This original project was created by Jürg Billeter and later maintained as part of the official GNOME project. The legacy source repository for that project is believed to be:
 
-`http://git.gnome.org/browse/nautilus-image-converter/` (which doesn't open by the way)
+`http://git.gnome.org/browse/nautilus-image-converter/` (which returns 404 by the way)
 
 Patches welcomed\!
 
