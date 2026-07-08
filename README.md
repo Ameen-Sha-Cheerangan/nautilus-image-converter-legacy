@@ -92,6 +92,8 @@ This original project was created by Jürg Billeter and later maintained as part
 
 `http://git.gnome.org/browse/nautilus-image-converter/` (which returns 404 by the way)
 
+---
+
 
 ## Issues
 
