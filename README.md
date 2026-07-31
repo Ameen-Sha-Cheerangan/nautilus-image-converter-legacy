@@ -25,7 +25,7 @@ All the original features of the `nautilus-image-converter` are fully intact:
 * **In-Place or New File:** Choose to overwrite your original images or create new copies (e.g., `image.resized.jpg`).
 
   
-<img src="images/SS1.png" height="5%"> <img src="images/SS2.png" height="5%">
+<img src="images/SS1.png" width="45%"> <img src="images/SS2.png" width="45%">
 
 
 ---
