@@ -103,7 +103,7 @@ If you found this tool helpful, please consider giving it a ⭐ on [GitHub](http
 
 ---
 
-## ☕ Support the developer
+## ☕ Support the Developer
 
 If this tool helped you, consider supporting its developer!
 
