@@ -1,7 +1,8 @@
 
 # Nautilus-Image-Converter-Legacy
 
-An extension for the GNOME Nautilus file manager to quickly resize and rotate images from the right-click context menu.
+> ⚠️ **Note:** This is the **legacy version** of Nautilus Image Converter. For **GNOME 43 and newer**, please use the [GNOME 43+ version](https://github.com/Ameen-Sha-Cheerangan/nautilus-image-converter-gnome43plus) instead.
+
 
 This repository is a fork of the original `nautilus-image-converter` from GNOME, updated with a new feature.
 
